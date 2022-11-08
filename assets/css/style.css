@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root {
+  --color-bg-1: #121212;
+  --color-bg-2: #242424;
+  --color-brand: #e7b837;
+  --color-brand-light: #dbb959;
+  --color-body: #c0c0c0;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-heading: #fff;
+  --font-main: "Plus Jakarta Sans";
+  --border-radius: 32px;
+}
+
+body {
+  background-color: var(--color-bg-1);
+  color: var(--color-body);
+  font-family: var(--font-main);
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--color-heading);
+}
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-brand);
+}
+img {
+  width: 100%;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* Navbar */
+.navbar {
+  background-color: var(--color-bg-1);
+}
+/* Btn */
+.btn {
+  padding: 12px 24px;
+}
+.btn-brand {
+  background-color: var(--color-brand);
+  color: var(--color-bg-1);
+  font-weight: 700;
+  border-radius: 100px;
+}
+.btn-brand:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+  color: var(--color-bg-1);
+}
+
+/* About */
+#about h1 {
+  font-weight: 700;
+}
+#about p {
+  max-width: 600px;
+  margin: 24px auto;
+}
+#about .input-group {
+  background-color: var(--color-bg-2);
+  padding: 12px;
+  border-radius: 100px;
+  margin-bottom: 120px;
+}
+
+#about .input-group .btn {
+  border-radius: 100px;
+}
+#about .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-body);
+}
+#about .form-control:focus {
+  box-shadow: none;
+}
+
+.bg-image {
+  min-height: 450px;
+  background-image: url(../images/cover1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section Title */
+.section-title {
+  margin-bottom: 40px;
+}
+.section-title h6 {
+  background-color: var(--color-brand);
+  padding: 8px 16px;
+  border-radius: 100px;
+  color: var(--color-bg-1);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+}
+.section-title p {
+  max-width: 700px;
+}
